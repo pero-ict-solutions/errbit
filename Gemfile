@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.10'
+gem 'rails', '3.0.14'
 gem 'nokogiri'
 gem 'mongoid', '2.1.2'
 gem 'haml'
@@ -9,7 +9,7 @@ gem 'htmlentities', "~> 4.3.0"
 gem 'devise', '~> 1.4.0'
 gem 'lighthouse-api'
 gem 'oruen_redmine_client', :require => 'redmine_client'
-gem 'mongoid_rails_migrations'
+gem 'mongoid_rails_migrations', '>= 0.0.14'
 gem 'useragent', '~> 0.3.1'
 gem 'pivotal-tracker'
 gem 'ruby-fogbugz', :require => 'fogbugz'
