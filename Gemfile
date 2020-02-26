@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.10'
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.10.8'
 gem 'mongoid', '2.1.2'
 gem 'haml'
 gem 'will_paginate', '>=3'
@@ -11,13 +11,13 @@ gem 'lighthouse-api'
 gem 'oruen_redmine_client', :require => 'redmine_client'
 gem 'mongoid_rails_migrations'
 gem 'useragent', '~> 0.3.1'
-gem 'pivotal-tracker'
+gem 'pivotal-tracker', '>= 0.4.1'
 gem 'ruby-fogbugz', :require => 'fogbugz'
 gem 'octokit'
 gem 'inherited_resources'
 gem 'SystemTimer', :platform => :ruby_18
 gem 'hoptoad_notifier', "~> 2.4"
-gem 'actionmailer_inline_css', "~> 1.3.0"
+gem 'actionmailer_inline_css', '~> 1.3.1'
 
 platform :ruby do
   gem 'bson_ext', '~> 1.4.0'
