@@ -1,23 +1,23 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.10'
+gem 'rails', '5.0.0'
 gem 'nokogiri'
 gem 'mongoid', '2.1.2'
 gem 'haml'
 gem 'will_paginate', '>=3'
 gem 'htmlentities', "~> 4.3.0"
-gem 'devise', '~> 1.4.0'
+gem 'devise', '~> 1.4.7'
 gem 'lighthouse-api'
 gem 'oruen_redmine_client', :require => 'redmine_client'
-gem 'mongoid_rails_migrations'
+gem 'mongoid_rails_migrations', '>= 0.0.14'
 gem 'useragent', '~> 0.3.1'
 gem 'pivotal-tracker'
 gem 'ruby-fogbugz', :require => 'fogbugz'
-gem 'octokit'
+gem 'octokit', '>= 1.0.0'
 gem 'inherited_resources'
 gem 'SystemTimer', :platform => :ruby_18
 gem 'hoptoad_notifier', "~> 2.4"
-gem 'actionmailer_inline_css', "~> 1.3.0"
+gem 'actionmailer_inline_css', '~> 1.3.1'
 
 platform :ruby do
   gem 'bson_ext', '~> 1.4.0'
@@ -26,7 +26,7 @@ end
 gem 'ri_cal'
 
 group :development, :test do
-  gem 'rspec-rails', '~> 2.6'
+  gem 'rspec-rails', '~> 2.8', '>= 2.8.0'
   gem 'webmock', :require => false
   gem 'factory_girl', '~> 1.3.3'
   gem 'factory_girl_rails', '~> 1.0.1'
@@ -43,6 +43,6 @@ group :test do
 end
 
 group :heroku do
-  gem 'thin'
+  gem 'thin', '>= 1.2.11'
 end
 
